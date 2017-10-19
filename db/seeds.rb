@@ -17,7 +17,7 @@
    )
  end
 
-10.times jdo
+10.times do
     Advertisement.create!(
         title:  RandomData.random_sentence,
         body:   RandomData.random_paragraph
