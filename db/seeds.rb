@@ -18,9 +18,10 @@
  end
 
 10.times do
-    Advertisement.create!(
+    Question.create!(
         title:  RandomData.random_sentence,
-        body:   RandomData.random_paragraph
+        body:   RandomData.random_paragraph,
+        resolved: false
     )
 end
 
