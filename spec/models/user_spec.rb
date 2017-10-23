@@ -35,6 +35,7 @@ RSpec.describe User, type: :model do
             expect(user_with_invalid_email).to_not be_valid
         end
     end
+
     describe "format name before saving" do
         it "name should be capitalize" do
             user.name = "bloc user"
