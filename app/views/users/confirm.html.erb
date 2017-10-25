@@ -11,9 +11,7 @@
     <div class="col-md-4", style="width:auto">
         <%= button_to "Yes", {controller: "users", action: "create", params: params}, class: 'btn btn-success' %>
     </div>
-</div>
-<div class="row">
     <div class="col-md-4", style="width:auto">
-        <%= button_to "No", {controller: "users", action: "new"}, class: 'btn btn-danger', method: :get %>
+        <%= button_to "No", {controller: "users", action: "new"}, class: 'btn btn-danger', :method => :get %>
     </div>
 </div>
