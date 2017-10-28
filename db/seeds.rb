@@ -49,10 +49,18 @@ end
  post = Post.find_or_create_by(title: 'Unique Title', body: 'Unique Body')
  Comment.find_or_create_by(post: post, body: 'Unique Body')
 
-user = User.first
- user.update_attributes!(
-   email: 'dvcv92@gmail.com', # replace this with your personal email
-   password: 'rage1234'
+admin = User.create!(
+   name:     'Admin User',
+   email:    'admin@example.com',
+   password: 'helloworld',
+   role:     'admin'
+ )
+
+ # Create a member
+ member = User.create!(
+   name:     'Member User',
+   email:    'member@example.com',
+   password: 'helloworld'
  )
 
  puts "Seed finished"
