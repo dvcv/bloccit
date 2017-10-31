@@ -32,7 +32,7 @@
 
  100.times do
    Comment.create!(
- # #4
+     user: users.sample,
      post: posts.sample,
      body: RandomData.random_paragraph
    )
