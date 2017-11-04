@@ -35,10 +35,8 @@
 
 <h2>Favorites</h2>
 <% if @user.favorites.any? %>
-
-    <%= for i in 0...@user.favorites.length do%>
-        <!-- couldnt get the avatar image to display the correct user -->
-        <!-- <%= image_tag User.find(current_user.favorites[i].user_id).avatar_url(48), class: "gravatar pull-left" %> -->
+    <%for i in 0...@user.favorites.length do%>
+        <%= image_tag User.find(@user.favorites[i].post.user_id).avatar_url(48), class: "gravatar pull-left" %>
         <%= render @user.favorites[i].post %>
     <% end %>
 <% else %>
