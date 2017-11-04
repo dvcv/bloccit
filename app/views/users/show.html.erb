@@ -19,8 +19,26 @@
    </div>
  </div>
 
- <h2>Posts</h2>
- <%= render @user.posts %>
+<h2>Posts</h2>
+<% if user_have_any_posts?(@user) %>
+    <%= render @user.posts %>
+<% else %>
+    <p><%= @user.name %> has not submitted any posts yet.</p>
+<% end %>
 
- <h2>Comments</h2>
- <%= render @user.comments %>
+<h2>Comments</h2>
+<% if user_have_any_comments?(@user) %>
+    <%= render @user.comments %>
+<% else %>
+    <p><%= @user.name %> has not submitted any comments yet.</p>
+<% end %>
+
+<h2>Favorites</h2>
+<% if @user.favorites.any? %>
+    <%for i in 0...@user.favorites.length do%>
+        <%= image_tag User.find(@user.favorites[i].post.user_id).avatar_url(48), class: "gravatar pull-left" %>
+        <%= render @user.favorites[i].post %>
+    <% end %>
+<% else %>
+    <p><%= @user.name %> has not favorited any posts yet.</p>
+<% end %>
