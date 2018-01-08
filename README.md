@@ -1,7 +1,10 @@
-## Reddit Clone with Rails
+# Reddit Clone with Rails
 
 ## Summary
 This project uses Ruby on Rails to create a simplified version of reddit. 
+
+## Live Site
+[Bloccit](https://agile-refuge-45328.herokuapp.com)
 
 ## Installation 
 
