@@ -1,3 +1,30 @@
-## Bloccit: a Reddit replica to teach the fundamentals of web development and Rails.
+## Reddit Clone with Rails
 
-Made with my mentor at [Bloc](http://bloc.io).
+## Summary
+This project uses Ruby on Rails to create a simplified version of reddit. 
+
+## Installation 
+
+Start by cloning the repository:
+
+```
+$ git clone https://github.com/dvcv/bloccit.git <your-frontend-project-name>
+```
+
+## Configuration
+
+Install the project dependencies by running:
+
+```
+$ bundle install
+```
+
+## Run the Application
+
+Run the application server:
+
+```
+$ rails s
+```
+
+The server will start up. To stop the server, press `cntrl + c`.
