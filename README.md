@@ -8,7 +8,7 @@ This project uses Ruby on Rails to create a simplified version of reddit.
 Start by cloning the repository:
 
 ```
-$ git clone https://github.com/dvcv/bloccit.git <your-frontend-project-name>
+$ git clone https://github.com/dvcv/bloccit.git <your-backend-project-name>
 ```
 
 ## Configuration
